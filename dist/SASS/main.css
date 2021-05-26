@@ -1,0 +1,87 @@
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.123)), to(rgba(0, 0, 0, 0.527))), url(../IMGS/zSem-tituloed.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.527)), url(../IMGS/zSem-tituloed.jpg) no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+header img:first-child {
+  width: 20%;
+  height: auto;
+}
+
+header .hero-about img {
+  float: right;
+  width: 30%;
+  -webkit-transform: translate(-75px, 25px);
+          transform: translate(-75px, 25px);
+}
+
+header .hero-text {
+  padding-top: 80px;
+}
+
+header h1 {
+  font-size: 350%;
+  font-family: biohazard game;
+  font-weight: bold;
+  color: #f5cc87;
+}
+
+header p {
+  width: 40%;
+  color: white;
+  font-size: 90%;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+header .hero-btn {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+
+header .hero-btn a, header .hero-btn a:last-child {
+  background-color: #f5cc87;
+  border: 2px solid #f5cc87;
+  padding: 10px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.979);
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .hero-btn a:last-child {
+  background-color: transparent;
+}
+
+header .hero-btn a:hover {
+  background-color: #aa8d5c;
+  color: rgba(255, 255, 255, 0.979);
+  border-color: #aa8d5c;
+}
+
+/*Setup*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-rendering: optimizeLegibility;
+  font-weight: 400;
+}
+
+.row {
+  margin: auto;
+  max-width: 1220px;
+}
+/*# sourceMappingURL=main.css.map */

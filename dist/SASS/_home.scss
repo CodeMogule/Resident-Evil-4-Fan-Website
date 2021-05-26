@@ -1,0 +1,68 @@
+@import './variables';
+
+header{
+    background:linear-gradient(rgba(0, 0, 0, 0.123),rgba(0, 0, 0, 0.527)), url(../IMGS/zSem-tituloed.jpg) no-repeat;
+    height: 100vh;
+    background-size: cover;
+
+    img:first-child{
+        width: 20%;
+        height: auto;
+    }
+
+    .hero-about{
+        img{
+            float: right;
+            width: 30%;
+            transform: translate(-75px,25px)
+        }
+    }
+
+    .hero-text{
+        padding-top: 80px;
+    }
+
+    h1{
+        font-size: 350%;
+        font-family: $biohazard-font;
+        font-weight: bold;
+        color: $re4-color;
+    }
+
+    p{
+        width: 40%;
+        color: white;
+        font-size:90% ;
+        line-height: 1.4;
+        letter-spacing: 1px;
+    }
+
+    .hero-btn{
+        padding-top: 40px;
+        display: flex;
+        gap: 25px;
+
+        a{
+            background-color: btnHeader(background-color);
+            border:btnHeader(border) ;
+            padding:btnHeader(padding);
+            border-radius: btnHeader(border-radius);
+            color:btnHeader(color);
+            text-decoration:btnHeader(text-decoration) ;
+            transition: 0.5s;
+        }
+
+        a:last-child{
+            @extend a;
+            background-color: transparent;
+        }
+
+        a:hover{
+            background-color: $re4-color-dark;
+            color:btnHeader(color);
+            border-color:$re4-color-dark ;
+        }
+    }
+    
+}
+
