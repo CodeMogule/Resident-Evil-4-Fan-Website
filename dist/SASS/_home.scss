@@ -1,4 +1,5 @@
 @import './variables';
+@import './navBar';
 
 header{
     background:linear-gradient(rgba(0, 0, 0, 0.123),rgba(0, 0, 0, 0.527)), url(../IMGS/zSem-tituloed.jpg) no-repeat;
@@ -14,7 +15,7 @@ header{
         img{
             float: right;
             width: 30%;
-            transform: translate(-75px,25px)
+            transform: translate(75%,25px)
         }
     }
 
@@ -23,7 +24,7 @@ header{
     }
 
     h1{
-        font-size: 350%;
+        font-size: 300%;
         font-family: $biohazard-font;
         font-weight: bold;
         color: $re4-color;

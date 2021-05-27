@@ -1,0 +1,39 @@
+@import './variables';
+
+nav{
+    
+}
+
+.main-nav{
+
+    transform: translate(0,-100%);
+
+    li{
+        display: inline;
+        margin:10px;
+        transform: translate(0,-300%);
+        font-size: 120%;
+        float: right;
+    }
+
+    a{
+        color: btnHeader(color);
+        text-decoration: btnHeader(text-decoration);
+    }
+
+a::after{
+    content: "";
+    display: block;
+    border-bottom: 2px solid $re4-color;
+    width: 40%;
+    position: relative;
+    top: 10px;
+    transition: .4s;
+    margin: auto;
+    opacity: 0;
+    }
+
+    a:hover::after{
+        opacity: 1;
+    }
+}
