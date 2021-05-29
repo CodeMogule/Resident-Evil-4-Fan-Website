@@ -1,5 +1,9 @@
+.nav-background {
+  background-color: #480032;
+  height: 120px;
+}
+
 .main-nav {
-  background-color: red;
   -webkit-transform: translate(0, -100%);
           transform: translate(0, -100%);
 }
@@ -102,6 +106,12 @@ header .hero-btn a:hover {
   border-color: #aa8d5c;
 }
 
+.about {
+  background: url(../IMGS/church.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
 /*Setup*/
 * {
   margin: 0;
@@ -117,8 +127,50 @@ html {
   font-weight: 400;
 }
 
+section {
+  padding: 2%;
+}
+
+h2 {
+  font-size: 300%;
+  text-align: center;
+  color: #f5cc87;
+  font-family: biohazard game;
+}
+
+h2::after {
+  display: block;
+  height: 2px;
+  content: " ";
+  background-color: #f5cc87;
+  width: 100px;
+  margin: auto;
+  margin-top: 30px;
+}
+
 .row {
   margin: auto;
   max-width: 1220px;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
 }
 /*# sourceMappingURL=main.css.map */

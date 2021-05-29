@@ -1,5 +1,6 @@
 @import './home';
-
+@import './variables';
+@import './about';
 /*Setup*/
 
 *{
@@ -15,7 +16,53 @@ html{
     font-weight: 400;
 }
 
+section{
+    padding: 2%;
+}
+
+h2{
+    font-size: 300%;
+    text-align: center;
+    color: $re4-color;
+    font-family: $biohazard-font;
+}
+
+h2::after{
+    display: block;
+    height: 2px;
+    content: " ";
+    background-color:$re4-color;
+    width: 100px;
+    margin: auto;
+    margin-top: 30px;
+   
+}
+
 .row{
     margin: auto;
     max-width: 1220px;
 }
+
+
+
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+    }
+    
+    .clearfix {
+    display: inline-block;
+    }
+    
+    html[xmlns] .clearfix {
+    display: block;
+    }
+    
+    * html .clearfix {
+    height: 1%;
+    }
