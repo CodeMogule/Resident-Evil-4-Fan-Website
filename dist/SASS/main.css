@@ -1,5 +1,5 @@
 .nav-background {
-  background-color: #480032;
+  background-color: #962d2d;
   height: 120px;
 }
 
@@ -64,7 +64,7 @@ header .hero-text {
 
 header h1 {
   font-size: 300%;
-  font-family: biohazard game;
+  font-family: biohazard game font;
   font-weight: bold;
   color: #f5cc87;
 }
@@ -112,6 +112,43 @@ header .hero-btn a:hover {
   height: 100vh;
 }
 
+.about .ganado {
+  margin-left: -100px;
+  height: 85vh;
+  width: 38%;
+  margin: -100px;
+  -webkit-transform: translate(0, 100px);
+          transform: translate(0, 100px);
+}
+
+.about .chainsaw {
+  height: 100vh;
+  width: 28%;
+  -webkit-transform: translate(0, -25px);
+          transform: translate(0, -25px);
+  float: right;
+  margin: -90px;
+}
+
+.about .about-p {
+  height: 8em;
+  position: relative;
+}
+
+.about p {
+  text-align: center;
+  width: 50%;
+  line-height: 2;
+  font-family: biohazard game font;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -150%);
+          transform: translate(-50%, -150%);
+}
+
 /*Setup*/
 * {
   margin: 0;
@@ -122,7 +159,7 @@ header .hero-btn a:hover {
 
 html {
   font-size: 20px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: biohazard game font;
   text-rendering: optimizeLegibility;
   font-weight: 400;
 }
@@ -135,7 +172,7 @@ h2 {
   font-size: 300%;
   text-align: center;
   color: #f5cc87;
-  font-family: biohazard game;
+  font-family: biohazard game font;
 }
 
 h2::after {
@@ -145,7 +182,7 @@ h2::after {
   background-color: #f5cc87;
   width: 100px;
   margin: auto;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .row {

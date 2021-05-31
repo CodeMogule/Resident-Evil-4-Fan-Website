@@ -1,5 +1,42 @@
+
+@import './variables';
+
 .about{
     background: url(../IMGS/church.png) no-repeat;
     background-size:cover;
     height: 100vh;
+    .ganado{
+        margin-left:-100px ;
+        height: 85vh;
+        width: 38%;
+        margin: -100px;
+        transform: translate(0,100px);
+    }
+
+    .chainsaw{
+        height: 100vh;
+        width: 28%;
+        transform: translate(0,-25px);
+        float: right;
+       margin: -90px;
+    }
+    
+    .about-p{
+        height: 8em;
+    position:relative;
+    }
+
+
+    p{
+        text-align: center;
+        width: 50%;
+        line-height: 2;
+        font-family: $biohazard-font;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -150%) ;
+    }
 }
