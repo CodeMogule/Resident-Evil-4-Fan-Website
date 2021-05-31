@@ -60,25 +60,27 @@ header .hero-about img {
 
 header .hero-text {
   padding-top: 80px;
+  position: relative;
 }
 
 header h1 {
-  font-size: 300%;
-  font-family: biohazard game font;
+  font-size: 250%;
   font-weight: bold;
   color: #f5cc87;
+  white-space: nowrap;
 }
 
 header p {
-  width: 40%;
   color: white;
   font-size: 90%;
   line-height: 1.4;
   letter-spacing: 1px;
+  width: 50%;
+  position: absolute;
 }
 
 header .hero-btn {
-  padding-top: 40px;
+  padding-top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,14 +141,61 @@ header .hero-btn a:hover {
   text-align: center;
   width: 50%;
   line-height: 2;
-  font-family: biohazard game font;
   color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  -webkit-transform: translate(-50%, -150%);
-          transform: translate(-50%, -150%);
+  -webkit-transform: translate(-50%, -120%);
+          transform: translate(-50%, -120%);
+}
+
+.characters {
+  background: url(../IMGS/castle.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.characters .img-item-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 100px;
+  gap: 15px;
+}
+
+.characters .img-select {
+  height: auto;
+  width: 10%;
+  cursor: pointer;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.characters .img-select:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.characters .active {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.characters .slider {
+  position: relative;
+}
+
+.characters .slider img {
+  height: auto;
+  width: 50%;
+  position: absolute;
+  left: 25%;
 }
 
 /*Setup*/
@@ -159,7 +208,7 @@ header .hero-btn a:hover {
 
 html {
   font-size: 20px;
-  font-family: biohazard game font;
+  font-family: "Montserrat", sans-serif;
   text-rendering: optimizeLegibility;
   font-weight: 400;
 }
@@ -168,11 +217,15 @@ section {
   padding: 2%;
 }
 
+h1 {
+  font-family: "Oswald", sans-serif;
+}
+
 h2 {
   font-size: 300%;
   text-align: center;
   color: #f5cc87;
-  font-family: biohazard game font;
+  font-family: "Oswald", sans-serif;
 }
 
 h2::after {

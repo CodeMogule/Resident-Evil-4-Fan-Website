@@ -1,6 +1,7 @@
 @import './home';
 @import './variables';
 @import './about';
+@import './characters';
 /*Setup*/
 
 *{
@@ -11,7 +12,7 @@
 
 html{
     font-size: 20px;
-    font-family:$biohazard-font;
+    font-family:$body-copy-font;
     text-rendering: optimizeLegibility;
     font-weight: 400;
 }
@@ -20,11 +21,15 @@ section{
     padding: 2%;
 }
 
+h1{
+    font-family: $header-font;
+}
+
 h2{
     font-size: 300%;
     text-align: center;
     color: $re4-color;
-    font-family: $biohazard-font;
+    font-family: $header-font;
 }
 
 h2::after{

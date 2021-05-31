@@ -1,0 +1,39 @@
+.characters{
+    background: url(../IMGS/castle.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    .img-item-container{
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+        gap: 15px;
+    }
+
+    .img-select{
+        height: auto;
+        width: 10%;
+        cursor: pointer;
+        filter: grayscale(100%);
+        transition: 0.4s;
+    }
+
+    .img-select:hover{
+        filter: none;
+    }
+
+    .active{
+        filter: none;
+    }
+
+    .slider{
+        position: relative;
+         img{
+             height: auto;
+             width: 50%;
+             position: absolute;
+             left: 25%;
+         }
+    }
+
+}
