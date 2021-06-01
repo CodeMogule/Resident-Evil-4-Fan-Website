@@ -1,3 +1,6 @@
+
+@import './variables';
+
 .characters{
     background: url(../IMGS/castle.jpg) no-repeat;
     background-size: cover;
@@ -26,14 +29,78 @@
         filter: none;
     }
 
+    .btn-slide{
+
+        button:first-child{
+            position: relative;
+            right: 25px;
+            top: 10rem;
+            background: transparent;
+            border: transparent;
+            color: $re4-color;
+            cursor: pointer !important;
+
+            i{
+               font-size: 250%;
+               
+            }
+        }
+
+        
+
+        button:last-child{
+            float: right;
+            background: transparent;
+            border: transparent;
+            color: $re4-color;
+            cursor: pointer;
+            position: relative;
+            left: 25px;
+            top: 10rem;
+
+            i{
+                font-size: 250%;
+            }
+        }
+    }
+
     .slider{
         position: relative;
+        display: none;
+       
          img{
              height: auto;
-             width: 50%;
+             width: 60%;
              position: absolute;
-             left: 25%;
+             left: 20%;
          }
+
+         .character-text{
+             background: black;
+             color: #fff;
+             position: relative;
+             height: 30vh;
+             width: 35%;
+             left: 23%;
+             padding: 2%;
+           transform: translate(0,40%);
+           border: 10px solid transparent;
+           border-image: url(../IMGS/border.png) 500 fill stretch ;
+           border-image-width:14%;
+           opacity: 0.8;
+          
+            
+             p{
+                 width: 80%;
+                 position: absolute;
+                
+             }
+         }
+
+         .right-text{
+            @extend .character-text;
+          left: 40%;
+        }
     }
 
 }

@@ -187,15 +187,71 @@ header .hero-btn a:hover {
           filter: none;
 }
 
+.characters .btn-slide button:first-child {
+  position: relative;
+  right: 25px;
+  top: 10rem;
+  background: transparent;
+  border: transparent;
+  color: #f5cc87;
+  cursor: pointer !important;
+}
+
+.characters .btn-slide button:first-child i {
+  font-size: 250%;
+}
+
+.characters .btn-slide button:last-child {
+  float: right;
+  background: transparent;
+  border: transparent;
+  color: #f5cc87;
+  cursor: pointer;
+  position: relative;
+  left: 25px;
+  top: 10rem;
+}
+
+.characters .btn-slide button:last-child i {
+  font-size: 250%;
+}
+
 .characters .slider {
   position: relative;
+  display: none;
 }
 
 .characters .slider img {
   height: auto;
-  width: 50%;
+  width: 60%;
   position: absolute;
-  left: 25%;
+  left: 20%;
+}
+
+.characters .slider .character-text, .characters .slider .right-text {
+  background: black;
+  color: #fff;
+  position: relative;
+  height: 30vh;
+  width: 35%;
+  left: 23%;
+  padding: 2%;
+  -webkit-transform: translate(0, 40%);
+          transform: translate(0, 40%);
+  border: 10px solid transparent;
+  -o-border-image: url(../IMGS/border.png) 500 stretch;
+     border-image: url(../IMGS/border.png) 500 fill stretch;
+  border-image-width: 14%;
+  opacity: 0.8;
+}
+
+.characters .slider .character-text p, .characters .slider .right-text p {
+  width: 80%;
+  position: absolute;
+}
+
+.characters .slider .right-text {
+  left: 40%;
 }
 
 /*Setup*/
