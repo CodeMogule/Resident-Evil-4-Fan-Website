@@ -58,18 +58,22 @@
         <div class="row">
             <h2>characters</h2>
             <div class="img-item-container">
-                <img src="./dist/IMGS/leon back.jpg" alt="" class="img-select active">
-                <img src="./dist/IMGS/ash back.jpg" alt="" class="img-select">
-                <img src="./dist/IMGS/men back.jpg" alt="" class="img-select">
-                <img src="./dist/IMGS/ada back5.png" alt="" class="img-select">
-                <img src="./dist/IMGS/saddler back.jpg" alt="" class="img-select">
-                <img src="./dist/IMGS/luis back.jpg" alt="" class="img-select">
-                <img src="./dist/IMGS/krauser back.jpeg" alt="" class="img-select">
+                <img src="./dist/IMGS/leon back.jpg" alt="" class="img-select active" onclick="selectCurrent(1)">
+                <img src="./dist/IMGS/ash back.jpg" alt="" class="img-select" onclick="selectCurrent(2)">
+                <img src="./dist/IMGS/men back.jpg" alt="" class="img-select" onclick="selectCurrent(3)">
+                <img src="./dist/IMGS/ada back5.png" alt="" class="img-select" onclick="selectCurrent(4)">
+                <img src="./dist/IMGS/saddler back.jpg" alt="" class="img-select" onclick="selectCurrent(5)">
+                <img src="./dist/IMGS/luis back.jpg" alt="" class="img-select" onclick="selectCurrent(6)">
+                <img src="./dist/IMGS/krauser back.jpeg" alt="" class="img-select" onclick="selectCurrent(7)">
             </div>
 
             <div class="btn-slide">
+                <!--
                 <button><i class="fas fa-chevron-left"></i></button>
                 <button><i class="fas fa-chevron-right"></i></button>
+                -->
+                <button onclick="addSlide(-1)">$</button>
+                <button onclick="addSlide(1)">$</button>
             </div>
 
             <div class="slider" style="display: block;">
@@ -92,7 +96,7 @@
                 <img src="./dist/IMGS/bitores mendez.jpg" alt="">
                 <div class="character-text">
                     <h1>Bitores Mendez</h1>
-                    <p> A tall, imposing man with an unkempt beard and wearing a dirty trenchcoat, this man is a leading member of the Los Illuminados and the chief of a small rural village. Hosting a dominant-strain Plaga, Mendez is able to control the Ganado villagers as his puppets.</p>
+                    <p> A tall, imposing man with an unkempt beard and wearing a dirty trenchcoat, this man is a leading member of the Los Illuminados and the chief of a small rural village.</p>
                 </div>
              </div>
 
@@ -100,7 +104,7 @@
                 <img src="./dist/IMGS/ada wong.jpg" alt="">
                 <div class="character-text">
                     <h1>Ada Wong</h1>
-                    <p> Ada Wong is the pseudonym of an enigmatic unnamed spy of Asian-American descent. She has gained notoriety in the corporate world for being able to handle serious situations and the most difficult requests without guilt</p>
+                    <p> Ada Wong is the pseudonym of an enigmatic unnamed spy of Asian-American descent. She has gained notoriety in the corporate world for being able to handle serious situation.</p>
                 </div>
              </div>
 
@@ -116,7 +120,7 @@
                 <img src="./dist/IMGS/luis sera.jpg" alt="">
                 <div class="character-text">
                     <h1>Luis Sera</h1>
-                    <p>Dr. Luis Sera was a biologist native to an isolated region of Spain. He was recruited into Los Iluminados' research department to genetically-engineer Plagas and bio-weapons, and was ultimately killed in his attempt to undermine their efforts.</p>
+                    <p>Dr. Luis Sera was a biologist native to an isolated region of Spain. He was recruited into Los Iluminados' research department to genetically-engineer Plagas</p>
                 </div>
              </div>
 
@@ -128,10 +132,32 @@
                     <p>Krauser took part in the infiltration of Los Iluminados to obtain a Plaga parasite. Krauser was killed in late 2004 by Ada Wong, who was on orders by her agency to steal the parasite.</p>
                 </div>
              </div>
-
         </div>
     </section>
 
+    <section class="gameplay">
+        <h2>Gameplay</h2>
+        <iframe src="https://www.youtube.com/embed/ROwcXqJews8" frameborder="0" height="500" width="800"></iframe>
+    </section>
+
+    <footer>
+        <h1>Resident Evil 4</h1>
+        <div class="logos">
+            <img src="./dist/IMGS/ps5.png" alt="ps5">
+            <img src="./dist/IMGS/ps4.png" alt="ps4">
+            <img src="./dist/IMGS/xbox series x.png" alt="xbox one series">
+            <img src="./dist/IMGS/xbox one.png" alt="xbox one">
+            <img src="./dist/IMGS/steam.png" alt="steam">
+        </div>
+        <div class="capcom">
+        <img src="./dist/IMGS/Capcom ogo.png" alt="" class="capcom-logo">
+        <p>All trademarks referenced herein are the properties of their respective owners.
+
+            ©CAPCOM CO., LTD. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
     <script src="https://kit.fontawesome.com/fc8b51f2eb.js" crossorigin="anonymous"></script>
+    <script src="./src/JS/app.js"></script>
 </body>
 </html>

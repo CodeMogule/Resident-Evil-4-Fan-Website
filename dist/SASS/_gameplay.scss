@@ -1,0 +1,12 @@
+.gameplay{
+    background: url(../IMGS/gameplay-back.png) no-repeat;
+    background-size: cover;
+    height: 100vh;  
+    position: relative;
+    
+    iframe{
+        position: absolute;
+        left: 23%;
+        top: 20%;
+    }
+}

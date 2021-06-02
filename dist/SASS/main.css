@@ -1,5 +1,5 @@
 .nav-background {
-  background-color: #962d2d;
+  background-color: #232323;
   height: 120px;
 }
 
@@ -40,8 +40,8 @@
 }
 
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.123)), to(rgba(0, 0, 0, 0.527))), url(../IMGS/zSem-tituloed.jpg) no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.123), rgba(0, 0, 0, 0.527)), url(../IMGS/zSem-tituloed.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.493)), to(rgba(0, 0, 0, 0.705))), url(../IMGS/zSem-tituloed.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.705)), url(../IMGS/zSem-tituloed.jpg) no-repeat;
   height: 100vh;
   background-size: cover;
 }
@@ -189,7 +189,7 @@ header .hero-btn a:hover {
 
 .characters .btn-slide button:first-child {
   position: relative;
-  right: 25px;
+  right: 3rem;
   top: 10rem;
   background: transparent;
   border: transparent;
@@ -208,7 +208,7 @@ header .hero-btn a:hover {
   color: #f5cc87;
   cursor: pointer;
   position: relative;
-  left: 25px;
+  left: 3rem;
   top: 10rem;
 }
 
@@ -219,6 +219,10 @@ header .hero-btn a:hover {
 .characters .slider {
   position: relative;
   display: none;
+}
+
+.characters .slider h1 {
+  color: #f5cc87;
 }
 
 .characters .slider img {
@@ -252,6 +256,60 @@ header .hero-btn a:hover {
 
 .characters .slider .right-text {
   left: 40%;
+}
+
+.gameplay {
+  background: url(../IMGS/gameplay-back.png) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.gameplay iframe {
+  position: absolute;
+  left: 23%;
+  top: 20%;
+}
+
+footer {
+  background: #232323;
+}
+
+footer h1 {
+  color: #fff;
+  text-align: center;
+  padding-top: 30px;
+}
+
+footer .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 50px;
+}
+
+footer .logos img {
+  height: auto;
+  width: 10%;
+}
+
+footer .capcom {
+  text-align: center;
+}
+
+footer .capcom .capcom-logo {
+  height: auto;
+  width: 10%;
+  justify-items: center;
+}
+
+footer .capcom p {
+  font-size: 50%;
+  color: #fff;
 }
 
 /*Setup*/

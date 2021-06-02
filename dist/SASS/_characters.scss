@@ -33,7 +33,7 @@
 
         button:first-child{
             position: relative;
-            right: 25px;
+            right: 3rem;
             top: 10rem;
             background: transparent;
             border: transparent;
@@ -55,7 +55,7 @@
             color: $re4-color;
             cursor: pointer;
             position: relative;
-            left: 25px;
+            left: 3rem;
             top: 10rem;
 
             i{
@@ -67,6 +67,10 @@
     .slider{
         position: relative;
         display: none;
+
+        h1{
+            color: $re4-color;
+        }
        
          img{
              height: auto;
