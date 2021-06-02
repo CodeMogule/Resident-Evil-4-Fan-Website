@@ -1,7 +1,7 @@
 
 @import './variables';
 
-.characters{
+#characters{
     background: url(../IMGS/castle.jpg) no-repeat;
     background-size: cover;
     height: 100vh;
@@ -67,6 +67,7 @@
     .slider{
         position: relative;
         display: none;
+        @include fadeAnim;
 
         h1{
             color: $re4-color;

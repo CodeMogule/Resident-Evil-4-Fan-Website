@@ -4,6 +4,7 @@
 @import './characters';
 @import './gameplay';
 @import './footer';
+@import './responsive';
 /*Setup*/
 
 *{
@@ -17,6 +18,7 @@ html{
     font-family:$body-copy-font;
     text-rendering: optimizeLegibility;
     font-weight: 400;
+    scroll-behavior: smooth;
 }
 
 section{

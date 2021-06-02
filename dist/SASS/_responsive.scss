@@ -1,0 +1,84 @@
+
+@include smallScreen {
+
+#home{
+    background: linear-gradient(rgba(0, 0, 0, 0.493),rgba(0, 0, 0, 0.705)), url(../IMGS/leonwallpaperphone.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .hero-about{
+        img{
+            display: none;
+        }
+    }
+
+    .hero-text{
+        h1{
+            font-size: 200%;
+        }
+        p{
+            width: 95%;
+            font-size: 70%;
+            padding-top: 10px;
+        }
+    }
+    .nav-background{
+        background-color: transparent;
+
+        nav{
+            display: none;
+        }
+
+        .menu-btn{
+            float: right;
+            position: relative;
+
+            .hamburger{
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                @include ham-turn-right;
+                color: $re4-color;
+                display: block;
+            }
+
+            .x{
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+                display: none;
+                color: $re4-color;
+                @include x-turn-left
+            }
+        }
+    
+       .logo{
+           width: 40% !important;
+       }
+    }
+
+    .hero-btn{
+        transform: translateY(23%);
+    }
+
+    }
+
+    #about{
+        background-position:center ;
+
+        img{
+            display: none;
+        }
+
+        .about-p{
+            p{
+                width: 100%;
+                font-size: 70%;
+                transform: translate(-50%,10%);
+            }
+        }
+    }
+
+}
+
+

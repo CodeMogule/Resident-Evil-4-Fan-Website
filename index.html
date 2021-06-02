@@ -10,16 +10,20 @@
     <title>Resident Evil 4</title>
 </head>
 <body>
-    <header>
+    <header id="home">
         <div class="nav-background">
             <div class="row">
-    <img src="./dist/IMGS/logo.png"  alt="logo">
+    <img src="./dist/IMGS/logo.png"  alt="logo" class="logo">
+    <div class="menu-btn">
+        <a href="" class="hamburger"><i class="fas fa-bars"></i></a>
+        <a href="" class="x"><i class="fas fa-times"></i></a>
+    </div>
     <nav>
         <ul class="main-nav">
-         <li><a href="">Home</a></li>
-         <li><a href="">About</a></li>
-         <li><a href="">Characters</a></li>
-         <li><a href="">Gameplay</a></li>
+         <li><a href="#home">Home</a></li>
+         <li><a href="#about">About</a></li>
+         <li><a href="#characters">Characters</a></li>
+         <li><a href="#gameplay">Gameplay</a></li>
         </ul>
         </nav>
         </div>
@@ -40,7 +44,7 @@
                   </div>
     </header>
 
-    <section class="about">
+    <section id="about">
         <div class="row">
         <h2>About</h2>
         <img src="./dist/IMGS/ganado.png" alt="" class="ganado">
@@ -54,7 +58,7 @@
         </div>
     </section>
 
-    <section class="characters">
+    <section id="characters">
         <div class="row">
             <h2>characters</h2>
             <div class="img-item-container">
@@ -68,12 +72,8 @@
             </div>
 
             <div class="btn-slide">
-                <!--
-                <button><i class="fas fa-chevron-left"></i></button>
-                <button><i class="fas fa-chevron-right"></i></button>
-                -->
-                <button onclick="addSlide(-1)">$</button>
-                <button onclick="addSlide(1)">$</button>
+                <button onclick="addSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+                <button onclick="addSlide(1)"><i class="fas fa-chevron-right"></i></button>
             </div>
 
             <div class="slider" style="display: block;">
@@ -135,7 +135,7 @@
         </div>
     </section>
 
-    <section class="gameplay">
+    <section id="gameplay">
         <h2>Gameplay</h2>
         <iframe src="https://www.youtube.com/embed/ROwcXqJews8" frameborder="0" height="500" width="800"></iframe>
     </section>
