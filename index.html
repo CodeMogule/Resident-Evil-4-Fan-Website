@@ -9,16 +9,26 @@
     <link rel="stylesheet" href="./dist/SASS/main.css">
     <title>Resident Evil 4</title>
 </head>
-<body>
-    <header id="home">
-        <div class="nav-background">
-            <div class="row">
-    <img src="./dist/IMGS/logo.png"  alt="logo" class="logo">
-    <div class="menu-btn">
-        <a href="" class="hamburger"><i class="fas fa-bars"></i></a>
-        <a href="" class="x"><i class="fas fa-times"></i></a>
+<body class="body">
+
+    <div class="mobile-menu">  
+
+        <img src="./dist/IMGS/logo.png"  alt="logo" class="logo-mobile" >
+        <button href="" class="x" onclick="closeMenu()"><i class="fas fa-times" ></i></button> 
+        <nav class="nav-mobile"> 
+            <ul class="mobile-main-nav">
+             <li><a href="#home">Home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#characters">Characters</a></li>
+             <li><a href="#gameplay">Gameplay</a></li>
+            </ul>     
+            </nav>
     </div>
-    <nav>
+<div class="page-wrap">
+    <header>
+        <div class="row">
+        <img src="./dist/IMGS/logo.png"  alt="logo" class="logo">
+        <nav>
         <ul class="main-nav">
          <li><a href="#home">Home</a></li>
          <li><a href="#about">About</a></li>
@@ -26,9 +36,14 @@
          <li><a href="#gameplay">Gameplay</a></li>
         </ul>
         </nav>
+        <div class="menu-btn">
+            <button href="" class="hamburger" onclick="showMenu()"><i class="fas fa-bars"></i></button>
         </div>
         </div>
+    </header>
 
+   
+    <section id="home">
         <div class="row">
             <div class="hero-about">
                 <img src="./dist/IMGS/Leon.png" alt="Leon">
@@ -42,7 +57,7 @@
                       <a href="">TRAILER</a>
                   </div>
                   </div>
-    </header>
+                </section>
 
     <section id="about">
         <div class="row">
@@ -156,6 +171,8 @@
             ©CAPCOM CO., LTD. ALL RIGHTS RESERVED.</p>
         </div>
     </footer>
+</div>
+
 
     <script src="https://kit.fontawesome.com/fc8b51f2eb.js" crossorigin="anonymous"></script>
     <script src="./src/JS/app.js"></script>

@@ -1,6 +1,142 @@
 
 @include smallScreen {
 
+    .page-wrap{
+        display: block;
+        overflow: hidden;
+    }
+
+    .show{
+        @include ham-turn-right;
+        z-index: 1;
+      }
+
+      .close{
+        @include x-turn-left;
+    }
+
+
+      
+
+    .mobile-menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+
+        .logo-mobile{
+            width: 30% !important;
+            visibility: hidden;
+        }
+
+        
+        
+     
+        .x{
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            visibility: hidden;
+            color: $re4-color;
+            border: transparent;
+            background: transparent;
+            cursor: pointer;
+            position: fixed;
+            i{
+                font-size: 150%;
+            }
+        }
+        
+
+        
+        
+
+        .nav-mobile{
+            visibility: hidden;
+           
+
+
+            .mobile-main-nav{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                overflow-x: hidden;
+                height: 100vh;
+                flex-direction: column;
+                gap: 80px;
+                font-size: 150%;
+            }
+
+            a{
+                color:btnHeader(color);
+                text-decoration: btnHeader(text-decoration);
+            }
+        
+        a::after{
+            content: "";
+            display: block;
+            border-bottom: 2px solid $re4-color;
+            width: 40%;
+            position: relative;
+            top: 10px;
+            transition: .4s;
+            margin: auto;
+            opacity: 0;
+            }
+        
+            a:hover::after{
+                opacity: 1;
+            }
+
+       
+
+        }
+    }
+
+header{
+
+   nav{
+    
+       .main-nav{
+           display: none;
+       }
+   }
+
+   .logo{
+    width: 30% !important;
+   }
+
+   
+
+
+    .menu-btn{
+       
+        
+        
+        .hamburger{
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            color: $re4-color;
+            display: block;
+            border: transparent;
+            background: transparent;
+            cursor: pointer;
+
+            i{
+                font-size: 150%;
+            }
+
+        }
+
+          
+
+      
+    }
+
+}
+
+
 #home{
     background: linear-gradient(rgba(0, 0, 0, 0.493),rgba(0, 0, 0, 0.705)), url(../IMGS/leonwallpaperphone.jpg) no-repeat;
     background-size: cover;
@@ -22,46 +158,17 @@
             padding-top: 10px;
         }
     }
-    .nav-background{
-        background-color: transparent;
-
-        nav{
-            display: none;
-        }
-
-        .menu-btn{
-            float: right;
-            position: relative;
-
-            .hamburger{
-                position: absolute;
-                top: 1rem;
-                right: 1rem;
-                @include ham-turn-right;
-                color: $re4-color;
-                display: block;
-            }
-
-            .x{
-                position: absolute;
-                top: 1rem;
-                right: 1rem;
-                display: none;
-                color: $re4-color;
-                @include x-turn-left
-            }
-        }
+   
+       
     
-       .logo{
-           width: 40% !important;
-       }
-    }
 
     .hero-btn{
         transform: translateY(23%);
     }
 
     }
+
+
 
     #about{
         background-position:center ;
@@ -79,6 +186,22 @@
         }
     }
 
+}
+
+
+@include desktopScreen{
+
+    .mobile-menu{
+        display: none;
+    }
+
+    .main-nav{
+        visibility: visible;
+    }
+
+    .menu-btn{
+        display: none;
+    }
 }
 
 

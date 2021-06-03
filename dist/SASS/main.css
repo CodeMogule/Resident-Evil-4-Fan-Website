@@ -1,28 +1,30 @@
-.nav-background {
-  background-color: #232323;
-  height: 120px;
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
-.main-nav {
-  -webkit-transform: translate(0, -100%);
-          transform: translate(0, -100%);
+header .logo {
+  width: 15%;
+  height: auto;
 }
 
-.main-nav li {
+header .main-nav li {
   display: inline;
   margin: 10px;
-  -webkit-transform: translate(0, -300%);
-          transform: translate(0, -300%);
+  -webkit-transform: translate(0, -250%);
+          transform: translate(0, -250%);
   font-size: 120%;
   float: right;
 }
 
-.main-nav a, .main-nav #home .hero-btn a:last-child, #home .hero-btn .main-nav a:last-child {
+header .main-nav a, header .main-nav #home .hero-btn a:last-child, #home .hero-btn header .main-nav a:last-child {
   color: rgba(255, 255, 255, 0.979);
   text-decoration: none;
 }
 
-.main-nav a::after, .main-nav #home .hero-btn a:last-child::after, #home .hero-btn .main-nav a:last-child::after {
+header .main-nav a::after, header .main-nav #home .hero-btn a:last-child::after, #home .hero-btn header .main-nav a:last-child::after {
   content: "";
   display: block;
   border-bottom: 2px solid #f5cc87;
@@ -35,7 +37,7 @@
   opacity: 0;
 }
 
-.main-nav a:hover::after, .main-nav #home .hero-btn a:last-child:hover::after, #home .hero-btn .main-nav a:last-child:hover::after {
+header .main-nav a:hover::after, header .main-nav #home .hero-btn a:last-child:hover::after, #home .hero-btn header .main-nav a:last-child:hover::after {
   opacity: 1;
 }
 
@@ -46,21 +48,16 @@
   background-size: cover;
 }
 
-#home img:first-child {
-  width: 20%;
-  height: auto;
-}
-
 #home .hero-about img {
   float: right;
   width: 30%;
-  -webkit-transform: translate(75%, 25px);
-          transform: translate(75%, 25px);
+  -webkit-transform: translate(-10%, 5rem);
+          transform: translate(-10%, 5rem);
 }
 
 #home .hero-text {
-  padding-top: 80px;
-  position: relative;
+  -webkit-transform: translate(0, 5rem);
+          transform: translate(0, 5rem);
 }
 
 #home h1 {
@@ -76,16 +73,15 @@
   line-height: 1.4;
   letter-spacing: 1px;
   width: 50%;
-  position: absolute;
 }
 
 #home .hero-btn {
-  padding-top: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 25px;
   position: absolute;
+  top: 25rem;
 }
 
 #home .hero-btn a, #home .hero-btn a:last-child {
@@ -334,41 +330,14 @@ footer .capcom p {
 }
 
 @media only screen and (max-width: 600px) {
-  #home {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.493)), to(rgba(0, 0, 0, 0.705))), url(../IMGS/leonwallpaperphone.jpg) no-repeat;
-    background: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.705)), url(../IMGS/leonwallpaperphone.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
+  .page-wrap {
+    display: block;
+    overflow: hidden;
   }
-  #home .hero-about img {
-    display: none;
-  }
-  #home .hero-text h1 {
-    font-size: 200%;
-  }
-  #home .hero-text p {
-    width: 95%;
-    font-size: 70%;
-    padding-top: 10px;
-  }
-  #home .nav-background {
-    background-color: transparent;
-  }
-  #home .nav-background nav {
-    display: none;
-  }
-  #home .nav-background .menu-btn {
-    float: right;
-    position: relative;
-  }
-  #home .nav-background .menu-btn .hamburger {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+  .show {
     -webkit-animation: turn_right 0.7s ease;
             animation: turn_right 0.7s ease;
-    color: #f5cc87;
-    display: block;
+    z-index: 1;
   }
   @-webkit-keyframes turn_right {
     0% {
@@ -390,12 +359,7 @@ footer .capcom p {
               transform: translateX(0);
     }
   }
-  #home .nav-background .menu-btn .x {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    display: none;
-    color: #f5cc87;
+  .close {
     -webkit-animation: turn_left 0.7s ease;
             animation: turn_left 0.7s ease;
   }
@@ -419,8 +383,106 @@ footer .capcom p {
               transform: translateX(0);
     }
   }
-  #home .nav-background .logo {
-    width: 40% !important;
+  .mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+  }
+  .mobile-menu .logo-mobile {
+    width: 30% !important;
+    visibility: hidden;
+  }
+  .mobile-menu .x {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    visibility: hidden;
+    color: #f5cc87;
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+    position: fixed;
+  }
+  .mobile-menu .x i {
+    font-size: 150%;
+  }
+  .mobile-menu .nav-mobile {
+    visibility: hidden;
+  }
+  .mobile-menu .nav-mobile .mobile-main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    overflow-x: hidden;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 80px;
+    font-size: 150%;
+  }
+  .mobile-menu .nav-mobile a, .mobile-menu .nav-mobile #home .hero-btn a:last-child, #home .hero-btn .mobile-menu .nav-mobile a:last-child {
+    color: rgba(255, 255, 255, 0.979);
+    text-decoration: none;
+  }
+  .mobile-menu .nav-mobile a::after, .mobile-menu .nav-mobile #home .hero-btn a:last-child::after, #home .hero-btn .mobile-menu .nav-mobile a:last-child::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #f5cc87;
+    width: 40%;
+    position: relative;
+    top: 10px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    margin: auto;
+    opacity: 0;
+  }
+  .mobile-menu .nav-mobile a:hover::after, .mobile-menu .nav-mobile #home .hero-btn a:last-child:hover::after, #home .hero-btn .mobile-menu .nav-mobile a:last-child:hover::after {
+    opacity: 1;
+  }
+  header nav .main-nav {
+    display: none;
+  }
+  header .logo {
+    width: 30% !important;
+  }
+  header .menu-btn .hamburger {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #f5cc87;
+    display: block;
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+  }
+  header .menu-btn .hamburger i {
+    font-size: 150%;
+  }
+  #home {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.493)), to(rgba(0, 0, 0, 0.705))), url(../IMGS/leonwallpaperphone.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.705)), url(../IMGS/leonwallpaperphone.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #home .hero-about img {
+    display: none;
+  }
+  #home .hero-text h1 {
+    font-size: 200%;
+  }
+  #home .hero-text p {
+    width: 95%;
+    font-size: 70%;
+    padding-top: 10px;
   }
   #home .hero-btn {
     -webkit-transform: translateY(23%);
@@ -440,6 +502,18 @@ footer .capcom p {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .mobile-menu {
+    display: none;
+  }
+  .main-nav {
+    visibility: visible;
+  }
+  .menu-btn {
+    display: none;
+  }
+}
+
 /*Setup*/
 * {
   margin: 0;
@@ -448,12 +522,14 @@ footer .capcom p {
           box-sizing: border-box;
 }
 
-html {
+html, body {
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   text-rendering: optimizeLegibility;
   font-weight: 400;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  background: #232323;
 }
 
 section {

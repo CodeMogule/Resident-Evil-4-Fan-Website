@@ -6,22 +6,19 @@
     height: 100vh;
     background-size: cover;
 
-    img:first-child{
-        width: 20%;
-        height: auto;
-    }
+    
 
     .hero-about{
         img{
             float: right;
             width: 30%;
-            transform: translate(75%,25px)
+            transform: translate(-10%,5rem)
         }
     }
 
     .hero-text{
-        padding-top: 80px;
-        position: relative;
+        transform: translate(0,5rem);
+        
     }
 
     h1{
@@ -37,14 +34,13 @@
         line-height: 1.4;
         letter-spacing: 1px;
         width: 50%;
-        position: absolute;
         }
 
     .hero-btn{
-        padding-top: 200px;
         display: flex;
         gap: 25px;
         position: absolute;
+        top: 25rem;
        
 
         a{

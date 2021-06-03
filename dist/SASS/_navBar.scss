@@ -1,24 +1,31 @@
 @import './variables';
 
+header{
+position: absolute;
+width: 100%;
+top: 0;
+left: 0;
+    
 
-.nav-background{
-    background-color: $perfect-black;
-    height: 120px;
+.logo{  
+        width: 15%;
+        height: auto;
 }
 
 .main-nav{
-    transform: translate(0,-100%);
+    
 
     li{
         display: inline;
         margin:10px;
-        transform: translate(0,-300%);
+        transform: translate(0,-250%);
         font-size: 120%;
         float: right;
+        
     }
 
     a{
-        color: btnHeader(color);
+        color:btnHeader(color);
         text-decoration: btnHeader(text-decoration);
     }
 
@@ -37,4 +44,5 @@ a::after{
     a:hover::after{
         opacity: 1;
     }
+}
 }
