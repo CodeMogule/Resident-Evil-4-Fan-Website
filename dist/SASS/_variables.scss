@@ -56,25 +56,26 @@ $btn-style:(
 };
 
 @mixin largeScreen {
-    @media only screen and (min-width: 600px){
+    @media only screen and (min-width: 600px) and (max-width: 769px) {
         @content;
     }
 };
 
-@mixin midLargeScreen {
-    @media only screen and (min-width: 768px){
-        @content;
-    }
-};
 
 @mixin desktopScreen {
-    @media only screen and (min-width: 992px){
+    @media only screen and (min-width: 769px) and (max-width:993px){
         @content;
     }
 };
 
 @mixin largeDesktopScreen {
-    @media only screen and (min-width: 1200px){
+    @media only screen and (min-width: 993px) and (max-width:1200px){
         @content;
     }
 };
+
+@mixin xlDesktopScreen{
+    @media only screen and (min-width: 1200px){
+        @content;
+    }
+}

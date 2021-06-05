@@ -48,6 +48,7 @@ const page = document.querySelector('.page-wrap')
 const mobileMenu = document.querySelector('.mobile-menu')
 const logo = document.querySelector('.logo-mobile')
 const navItems = document.querySelectorAll('.mobile-main-nav li')
+const home = document.getElementById('home')
 
 
 
@@ -62,6 +63,7 @@ function showMenu(){
         mobileMenu.classList.add('close')
         mobileMenu.style.zIndex='1'
         logo.style.visibility = 'visible'
+        mobileMenu.style.display = 'block'
         
 }
 
@@ -75,6 +77,7 @@ function closeMenu(){
         mobileMenu.style.zIndex='0'
         logo.style.visibility = 'hidden'
         mobileMenu.classList.remove('close')
+        mobileMenu.style.display = 'none'
 }
 
 navItems.forEach((curr)=>{
@@ -85,6 +88,7 @@ navItems.forEach((curr)=>{
         logo.style.visibility = 'hidden'
         hamburger.style.visibility = 'visible';
         mobileMenu.style.zIndex='0'
+        mobileMenu.style.display = 'none'
     })
 
 })

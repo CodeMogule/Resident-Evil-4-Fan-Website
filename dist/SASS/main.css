@@ -282,6 +282,13 @@ header .main-nav a:hover::after, header .main-nav #home .hero-btn a:last-child:h
   position: relative;
 }
 
+#gameplay .gameplay-vid {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
 #gameplay iframe {
   position: absolute;
   left: 23%;
@@ -330,9 +337,304 @@ footer .capcom p {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    position: relative;
+  }
+  h2 {
+    font-size: 180% !important;
+  }
   .page-wrap {
-    display: block;
+    position: relative;
     overflow: hidden;
+  }
+  .show {
+    -webkit-animation: turn_right 0.7s ease;
+            animation: turn_right 0.7s ease;
+    z-index: 1;
+  }
+  @-webkit-keyframes turn_right {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes turn_right {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  .close {
+    -webkit-animation: turn_left 0.7s ease;
+            animation: turn_left 0.7s ease;
+  }
+  @-webkit-keyframes turn_left {
+    0% {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes turn_left {
+    0% {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  .mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: none;
+  }
+  .mobile-menu .logo-mobile {
+    width: 30% !important;
+    visibility: hidden;
+  }
+  .mobile-menu .x {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    visibility: hidden;
+    color: #f5cc87;
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+    position: fixed;
+  }
+  .mobile-menu .x i {
+    font-size: 150%;
+  }
+  .mobile-menu .nav-mobile {
+    visibility: hidden;
+  }
+  .mobile-menu .nav-mobile .mobile-main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    overflow-x: hidden;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 80px;
+    font-size: 150%;
+  }
+  .mobile-menu .nav-mobile a, .mobile-menu .nav-mobile #home .hero-btn a:last-child, #home .hero-btn .mobile-menu .nav-mobile a:last-child {
+    color: rgba(255, 255, 255, 0.979);
+    text-decoration: none;
+  }
+  .mobile-menu .nav-mobile a::after, .mobile-menu .nav-mobile #home .hero-btn a:last-child::after, #home .hero-btn .mobile-menu .nav-mobile a:last-child::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #f5cc87;
+    width: 40%;
+    position: relative;
+    top: 10px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    margin: auto;
+    opacity: 0;
+  }
+  .mobile-menu .nav-mobile a:hover::after, .mobile-menu .nav-mobile #home .hero-btn a:last-child:hover::after, #home .hero-btn .mobile-menu .nav-mobile a:last-child:hover::after {
+    opacity: 1;
+  }
+  header nav .main-nav {
+    display: none;
+  }
+  header .logo {
+    width: 30% !important;
+  }
+  header .menu-btn .hamburger {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #f5cc87;
+    display: block;
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+  }
+  header .menu-btn .hamburger i {
+    font-size: 150%;
+  }
+  #home {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.493)), to(rgba(0, 0, 0, 0.705))), url(../IMGS/leonwallpaperphone.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.705)), url(../IMGS/leonwallpaperphone.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #home h1 {
+    font-size: 150% !important;
+  }
+  #home .hero-about img {
+    display: none;
+  }
+  #home .hero-text h1 {
+    font-size: 200%;
+  }
+  #home .hero-text p {
+    width: 95%;
+    font-size: 70%;
+    padding-top: 10px;
+  }
+  #home .hero-btn {
+    -webkit-transform: translateY(23%);
+            transform: translateY(23%);
+  }
+  #about {
+    background-position: center;
+  }
+  #about img {
+    display: none;
+  }
+  #about .about-p p {
+    width: 100%;
+    font-size: 70%;
+    -webkit-transform: translate(-50%, 10%);
+            transform: translate(-50%, 10%);
+  }
+  #characters {
+    background-position: center;
+  }
+  #characters .img-item-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: stretch;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  #characters .img-item-container .img-select {
+    width: 30% !important;
+  }
+  #characters .btn-slide button {
+    position: relative;
+    left: 10px;
+    -webkit-transform: translate(0, -5rem);
+            transform: translate(0, -5rem);
+    z-index: 1;
+  }
+  #characters .btn-slide button i {
+    font-size: 150% !important;
+  }
+  #characters .btn-slide button:last-child {
+    position: relative;
+    -webkit-transform: translate(-3rem, -5rem);
+            transform: translate(-3rem, -5rem);
+    z-index: 1;
+  }
+  #characters .slider .right-text {
+    left: 35% !important;
+  }
+  #characters .slider img {
+    width: 80%;
+    left: 10%;
+  }
+  #characters .slider .character-text, #characters .slider .right-text {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 50%;
+    height: 15vh;
+    left: 12%;
+    position: relative;
+    bottom: 1rem;
+  }
+  #characters .slider .character-text h1, #characters .slider .right-text h1 {
+    font-size: 70%;
+  }
+  #characters .slider .character-text p, #characters .slider .right-text p {
+    width: 95%;
+    font-size: 40%;
+    padding-top: 10px;
+    position: absolute;
+  }
+  #gameplay {
+    background-position: center;
+  }
+  #gameplay .gameplay-vid {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #gameplay iframe {
+    height: 350px;
+    width: 500px;
+    position: absolute;
+    -webkit-transform: translate(-20%, -10%);
+            transform: translate(-20%, -10%);
+    display: block;
+  }
+  footer h1 {
+    font-size: 150%;
+  }
+  footer .logos {
+    gap: 10px;
+  }
+  footer .logos img {
+    width: 20%;
+  }
+  footer .capcom {
+    position: relative;
+    top: 0px;
+  }
+  footer .capcom img {
+    width: 30% !important;
+  }
+}
+
+@media only screen and (max-width: 320px), (max-width: 346px) {
+  .character-text, #characters .slider .right-text {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 50%;
+    height: 15vh;
+    left: 12%;
+    position: relative;
+    bottom: 1.5rem !important;
+  }
+  .character-text h1, #characters .slider .right-text h1 {
+    font-size: 70%;
+  }
+  .character-text p, #characters .slider .right-text p {
+    width: 95% !important;
+    font-size: 35%;
+    position: absolute;
+    margin-top: -10px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 769px) {
+  .main-nav {
+    display: none;
+  }
+  .page-wrap {
+    position: relative;
   }
   .show {
     -webkit-animation: turn_right 0.7s ease;
@@ -473,15 +775,21 @@ footer .capcom p {
     background-size: cover;
     background-position: center;
   }
+  #home h1 {
+    font-size: 250% !important;
+  }
   #home .hero-about img {
     display: none;
+  }
+  #home .hero-text {
+    padding-top: 30px;
   }
   #home .hero-text h1 {
     font-size: 200%;
   }
   #home .hero-text p {
     width: 95%;
-    font-size: 70%;
+    font-size: 90%;
     padding-top: 10px;
   }
   #home .hero-btn {
@@ -496,21 +804,488 @@ footer .capcom p {
   }
   #about .about-p p {
     width: 100%;
-    font-size: 70%;
+    font-size: 100%;
     -webkit-transform: translate(-50%, 10%);
             transform: translate(-50%, 10%);
+    margin-top: -20px;
+  }
+  #characters {
+    background-position: center;
+  }
+  #characters .img-item-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: stretch;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  #characters .img-item-container .img-select {
+    width: 20% !important;
+  }
+  #characters .btn-slide button {
+    position: relative;
+    left: 10px;
+    -webkit-transform: translate(0, -2rem);
+            transform: translate(0, -2rem);
+    z-index: 1;
+  }
+  #characters .btn-slide button i {
+    font-size: 150% !important;
+  }
+  #characters .btn-slide button:last-child {
+    position: relative;
+    -webkit-transform: translate(-3rem, -2rem);
+            transform: translate(-3rem, -2rem);
+    z-index: 1;
+  }
+  #characters .slider .right-text {
+    left: 35% !important;
+  }
+  #characters .slider img {
+    width: 80%;
+    left: 10%;
+  }
+  #characters .slider .character-text, #characters .slider .right-text {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 40%;
+    height: 15vh;
+    left: 12%;
+    position: relative;
+    top: 1rem;
+  }
+  #characters .slider .character-text h1, #characters .slider .right-text h1 {
+    font-size: 70%;
+  }
+  #characters .slider .character-text p, #characters .slider .right-text p {
+    width: 70%;
+    font-size: 40%;
+    padding-top: 10px;
+    position: absolute;
+  }
+  #gameplay {
+    background-position: center;
+  }
+  #gameplay .gameplay-vid {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 200%;
+  }
+  #gameplay iframe {
+    height: 400px;
+    width: 700px;
+    position: absolute;
+    -webkit-transform: translate(-20%, -35%);
+            transform: translate(-20%, -35%);
+    display: block;
+  }
+  footer h1 {
+    font-size: 110%;
+  }
+  footer .logos {
+    gap: 10px;
+  }
+  footer .logos img {
+    width: 15%;
+  }
+  footer .capcom img {
+    width: 20% !important;
+  }
+  footer .capcom p {
+    font-size: 80%;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 769px) and (max-width: 993px) {
+  .main-nav {
+    display: none;
+  }
+  .page-wrap {
+    min-height: 100vh;
+  }
+  .show {
+    -webkit-animation: turn_right 0.7s ease;
+            animation: turn_right 0.7s ease;
+    z-index: 1;
+  }
+  @-webkit-keyframes turn_right {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes turn_right {
+    0% {
+      -webkit-transform: translateX(-100%);
+              transform: translateX(-100%);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  .close {
+    -webkit-animation: turn_left 0.7s ease;
+            animation: turn_left 0.7s ease;
+  }
+  @-webkit-keyframes turn_left {
+    0% {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  @keyframes turn_left {
+    0% {
+      -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+  .mobile-menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+  }
+  .mobile-menu .logo-mobile {
+    width: 20% !important;
+    visibility: hidden;
+  }
+  .mobile-menu .x {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    visibility: hidden;
+    color: #f5cc87;
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+    position: fixed;
+  }
+  .mobile-menu .x i {
+    font-size: 150%;
+  }
+  .mobile-menu .nav-mobile {
+    visibility: hidden;
+    overflow: hidden;
+  }
+  .mobile-menu .nav-mobile .mobile-main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    overflow-x: hidden;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 80px;
+    font-size: 150%;
+  }
+  .mobile-menu .nav-mobile a, .mobile-menu .nav-mobile #home .hero-btn a:last-child, #home .hero-btn .mobile-menu .nav-mobile a:last-child {
+    color: rgba(255, 255, 255, 0.979);
+    text-decoration: none;
+  }
+  .mobile-menu .nav-mobile a::after, .mobile-menu .nav-mobile #home .hero-btn a:last-child::after, #home .hero-btn .mobile-menu .nav-mobile a:last-child::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #f5cc87;
+    width: 40%;
+    position: relative;
+    top: 10px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    margin: auto;
+    opacity: 0;
+  }
+  .mobile-menu .nav-mobile a:hover::after, .mobile-menu .nav-mobile #home .hero-btn a:last-child:hover::after, #home .hero-btn .mobile-menu .nav-mobile a:last-child:hover::after {
+    opacity: 1;
+  }
+  header nav .main-nav {
+    display: none;
+  }
+  header .logo {
+    width: 20% !important;
+  }
+  header .menu-btn .hamburger {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: #f5cc87;
+    display: block;
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+  }
+  header .menu-btn .hamburger i {
+    font-size: 150%;
+  }
+  #home {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.493)), to(rgba(0, 0, 0, 0.705))), url(../IMGS/leonwallpaperphone.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.493), rgba(0, 0, 0, 0.705)), url(../IMGS/leonwallpaperphone.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #home h1 {
+    font-size: 200% !important;
+  }
+  #home .hero-about img {
+    display: none;
+  }
+  #home .hero-text {
+    padding-top: 30px;
+  }
+  #home .hero-text h1 {
+    font-size: 200%;
+  }
+  #home .hero-text p {
+    width: 50%;
+    font-size: 85%;
+    padding-top: 10px;
+  }
+  #home .hero-btn {
+    -webkit-transform: translateY(23%);
+            transform: translateY(23%);
+  }
+  #about {
+    background-position: center;
+  }
+  #about img {
+    display: none;
+  }
+  #about .about-p p {
+    width: 100%;
+    font-size: 100%;
+    -webkit-transform: translate(-50%, 10%);
+            transform: translate(-50%, 10%);
+    margin-top: -20px;
+  }
+  #characters {
+    background-position: center;
+  }
+  #characters .img-item-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: stretch;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  #characters .img-item-container .img-select {
+    width: 10% !important;
+  }
+  #characters .btn-slide button {
+    position: relative;
+    left: 10px;
+    -webkit-transform: translate(0, -2rem);
+            transform: translate(0, -2rem);
+    z-index: 1;
+  }
+  #characters .btn-slide button i {
+    font-size: 200% !important;
+  }
+  #characters .btn-slide button:last-child {
+    position: relative;
+    -webkit-transform: translate(-3rem, -2rem);
+            transform: translate(-3rem, -2rem);
+    z-index: 1;
+  }
+  #characters .slider .right-text {
+    left: 35% !important;
+  }
+  #characters .slider img {
+    width: 80%;
+    left: 10%;
+  }
+  #characters .slider .character-text, #characters .slider .right-text {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 40%;
+    height: 25vh;
+    left: 12%;
+    position: relative;
+    top: 1rem;
+  }
+  #characters .slider .character-text h1, #characters .slider .right-text h1 {
+    font-size: 90%;
+  }
+  #characters .slider .character-text p, #characters .slider .right-text p {
+    width: 90%;
+    font-size: 75%;
+    padding-top: 10px;
+    position: absolute;
+  }
+  #gameplay {
+    background-position: center;
+  }
+  #gameplay .gameplay-vid {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 200%;
+  }
+  #gameplay iframe {
+    height: 400px;
+    width: 700px;
+    position: absolute;
+    -webkit-transform: translate(-20%, -35%);
+            transform: translate(-20%, -35%);
+    display: block;
+  }
+  footer h1 {
+    font-size: 110%;
+  }
+  footer .logos {
+    gap: 10px;
+  }
+  footer .logos img {
+    width: 15%;
+  }
+  footer .capcom img {
+    width: 20% !important;
+  }
+  footer .capcom p {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
   .mobile-menu {
     display: none;
   }
-  .main-nav {
-    visibility: visible;
-  }
-  .menu-btn {
+  header .hamburger {
     display: none;
+  }
+  header .logo {
+    width: 20%;
+  }
+  #home .hero-about {
+    padding-top: 30px;
+  }
+  #home .hero-text p {
+    font-size: 100%;
+    width: 100%;
+  }
+  #about .chainsaw {
+    position: relative;
+    right: 80px;
+  }
+  #about .about-p {
+    -webkit-transform: translateY(80%);
+            transform: translateY(80%);
+  }
+  .btn-slide button {
+    position: relative;
+    left: 10px;
+    -webkit-transform: translate(0, -2rem);
+            transform: translate(0, -2rem);
+    z-index: 1;
+  }
+  .btn-slide button i {
+    font-size: 200% !important;
+  }
+  .btn-slide button:last-child {
+    position: relative;
+    -webkit-transform: translate(-3rem, -2rem);
+            transform: translate(-3rem, -2rem);
+    z-index: 1;
+  }
+  .slider .right-text {
+    left: 35% !important;
+  }
+  .slider img {
+    width: 80%;
+    left: 10%;
+  }
+  .slider .character-text, #characters .slider .right-text {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 40%;
+    height: 25vh;
+    left: 12%;
+    position: relative;
+    bottom: 1rem;
+  }
+  .slider .character-text h1, #characters .slider .right-text h1 {
+    font-size: 90%;
+  }
+  .slider .character-text p, #characters .slider .right-text p {
+    width: 90%;
+    font-size: 75%;
+    padding-top: 10px;
+    position: absolute;
+  }
+  .gameplay-vid {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 200%;
+  }
+  iframe {
+    height: 400px;
+    width: 700px;
+    position: absolute;
+    -webkit-transform: translate(-5%, -20%);
+            transform: translate(-5%, -20%);
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .mobile-menu {
+    display: none;
+  }
+  header .hamburger {
+    display: none;
+  }
+  .btn-slide button {
+    position: relative;
+    left: 10px;
+    -webkit-transform: translate(0, -2rem);
+            transform: translate(0, -2rem);
+    z-index: 1;
+  }
+  .btn-slide button i {
+    font-size: 200% !important;
+  }
+  .btn-slide button:last-child {
+    position: relative;
+    -webkit-transform: translate(-3rem, -2rem);
+            transform: translate(-3rem, -2rem);
+    z-index: 1;
+  }
+  .chainsaw {
+    position: relative;
+    right: 80px;
+  }
+  iframe {
+    height: 400px;
+    width: 700px;
+    position: absolute;
+    -webkit-transform: translate(10%, -20%);
+            transform: translate(10%, -20%);
+    display: block;
   }
 }
 
@@ -530,6 +1305,7 @@ html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   background: #232323;
+  position: relative;
 }
 
 section {
