@@ -77,9 +77,9 @@ header .main-nav a:hover::after, header .main-nav #home .hero-btn a:last-child:h
 
 #home .hero-btn {
   -ms-box-orient: horizontal;
+  display: -moz-flex;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -moz-flex;
   display: flex;
   gap: 25px;
   position: absolute;
@@ -92,6 +92,7 @@ header .main-nav a:hover::after, header .main-nav #home .hero-btn a:last-child:h
   padding: 10px;
   border-radius: 10px;
   color: rgba(255, 255, 255, 0.979);
+  -webkit-text-decoration: none;
   text-decoration: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -157,9 +158,9 @@ header .main-nav a:hover::after, header .main-nav #home .hero-btn a:last-child:h
 
 #characters .img-item-container {
   -ms-box-orient: horizontal;
+  display: -moz-flex;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -moz-flex;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -173,19 +174,19 @@ header .main-nav a:hover::after, header .main-nav #home .hero-btn a:last-child:h
   width: 10%;
   cursor: pointer;
   -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 #characters .img-select:hover {
   -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 #characters .active {
   -webkit-filter: none;
-          filter: none;
+  filter: none;
 }
 
 #characters .btn-slide button:first-child {
@@ -265,7 +266,7 @@ header .main-nav a:hover::after, header .main-nav #home .hero-btn a:last-child:h
           transform: translate(0, 40%);
   border: 10px solid transparent;
   -o-border-image: url(../IMGS/border.png) 500 stretch;
-     border-image: url(../IMGS/border.png) 500 fill stretch;
+  border-image: url(../IMGS/border.png) 500 fill stretch;
   border-image-width: 14%;
   opacity: 0.8;
 }
@@ -311,9 +312,9 @@ footer h1 {
 
 footer .logos {
   -ms-box-orient: horizontal;
+  display: -moz-flex;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: -moz-flex;
   display: flex;
   justify-items: center;
   -webkit-box-pack: space-evenly;
@@ -1320,11 +1321,6 @@ html, body {
   overflow-x: hidden;
   background: #232323;
   position: relative;
-  -ms-box-orient: horizontal;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
 }
 
 section {
