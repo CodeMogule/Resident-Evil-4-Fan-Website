@@ -76,11 +76,6 @@ header .main-nav a:hover::after, header .main-nav #home .hero-btn a:last-child:h
 }
 
 #home .hero-btn {
-  -ms-box-orient: horizontal;
-  display: -moz-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 25px;
   position: absolute;
   top: 25rem;
@@ -157,11 +152,6 @@ header .main-nav a:hover::after, header .main-nav #home .hero-btn a:last-child:h
 }
 
 #characters .img-item-container {
-  -ms-box-orient: horizontal;
-  display: -moz-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -421,11 +411,6 @@ header .main-nav a:hover::after, header .main-nav #home .hero-btn a:last-child:h
 }
 
 #home .hero-btn {
-  -ms-box-orient: horizontal;
-  display: -moz-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 25px;
   position: absolute;
   top: 25rem;
@@ -623,9 +608,6 @@ header .main-nav a:hover::after, header .main-nav #home .hero-btn a:last-child:h
             transform: translateY(23%);
     height: 40px;
     width: 70%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   #home .hero-btn a, #home .hero-btn a:last-child {
     font-size: 60%;
