@@ -7,15 +7,17 @@
     height: 100vh;
 
     .img-item-container{
-        
+        -ms-box-orient: horizontal;
+  display: -moz-flex;
+        display: flex;
         justify-content: center;
         padding-top: 100px;
-        gap: 15px;
     }
 
     .img-select{
         height: auto;
         width: 10%;
+        padding: 5px;
         cursor: pointer;
         -webkit-filter: grayscale(100%);
                 filter: grayscale(100%);

@@ -37,8 +37,6 @@
         }
 
     .hero-btn{
-
-        gap: 25px;
         position: absolute;
         top: 25rem;
        
@@ -57,6 +55,7 @@
         a:last-child{
             @extend a;
             background-color: transparent;
+            margin-left: 30px;
         }
 
         a:hover{
