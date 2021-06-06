@@ -160,6 +160,7 @@ header .main-nav a:hover::after, header .main-nav #home .hero-btn a:last-child:h
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 100px;
 }
 
 #characters .img-select {
