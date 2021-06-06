@@ -547,8 +547,10 @@ header .main-nav a:hover::after, header .main-nav #home .hero-btn a:last-child:h
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 80px;
     font-size: 150%;
+  }
+  .mobile-menu .nav-mobile .mobile-main-nav li {
+    padding: 50px;
   }
   .mobile-menu .nav-mobile a, .mobile-menu .nav-mobile #home .hero-btn a:last-child, #home .hero-btn .mobile-menu .nav-mobile a:last-child {
     color: rgba(255, 255, 255, 0.979);
