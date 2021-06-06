@@ -10,6 +10,12 @@ footer{
     }
 
     .logos{
+        -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
         display: flex;
         justify-items: center;
         justify-content: space-evenly;
