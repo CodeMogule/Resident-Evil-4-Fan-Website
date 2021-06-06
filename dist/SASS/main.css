@@ -506,6 +506,9 @@ footer .capcom p {
             transform: translateY(23%);
     height: 40px;
     width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   #home .hero-btn a, #home .hero-btn a:last-child {
     font-size: 60%;
