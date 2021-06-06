@@ -504,6 +504,11 @@ footer .capcom p {
   #home .hero-btn {
     -webkit-transform: translateY(23%);
             transform: translateY(23%);
+    height: 40px;
+    width: 70%;
+  }
+  #home .hero-btn a, #home .hero-btn a:last-child {
+    font-size: 60%;
   }
   #about {
     background-position: center;
