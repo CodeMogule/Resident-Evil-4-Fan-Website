@@ -16,10 +16,15 @@ footer{
         justify-items: center;
         justify-content: space-evenly;
         padding: 50px;
+        list-style: none;
+
+        li{
+            width: 20%;
+        }
 
         img{
             height: auto;
-            width: 10%;
+            width: 50%;
         }
     }
 .capcom{

@@ -221,12 +221,16 @@ header{
         background-position: center;
 
         .img-item-container{
-            flex-direction: column;
-           justify-items: stretch;
-         flex-flow: wrap;
+           flex-wrap: wrap ;
+
+           li{
+               width: 30%;
+           }
+           
+         
             .img-select{
-                width: 30% !important;
-                
+                width: 80% !important;
+                padding: 10px;
             }
         }
 
@@ -313,9 +317,12 @@ header{
         }
 
         .logos{
-            gap: 10px;
+            li{
+                width: 100%;
+            }
             img{
-                width: 20%;
+                width: 100%;
+                padding: 4px;
             }
             }
 
@@ -533,11 +540,13 @@ header{
         background-position: center;
 
         .img-item-container{
-            flex-direction: column;
            justify-items: stretch;
          flex-flow: wrap;
+         li{
+             width: 20%;
+         }
             .img-select{
-                width: 20% !important;
+                width: 80% !important;
                 
             }
         }
@@ -623,9 +632,14 @@ header{
         }
 
         .logos{
-            gap: 10px;
+
+            li{
+                width: 100%;
+                margin-right: 3%;
+            }
+            
             img{
-                width: 15%;
+                width: 100%;
             }
             }
 
@@ -829,8 +843,14 @@ header{
             flex-direction: column;
            justify-items: stretch;
          flex-flow: wrap;
+
+         li{
+             width: 15%;
+         }
+
             .img-select{
-                width: 10% !important;
+                width: 70% !important;
+                
                 
             }
         }
@@ -916,9 +936,12 @@ header{
         }
 
         .logos{
-            gap: 10px;
+            li{
+                width: 100%;
+                margin-right: 3%;
+            }
             img{
-                width: 15%;
+                width: 100%;
             }
             }
 
