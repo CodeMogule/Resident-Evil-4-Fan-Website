@@ -161,12 +161,20 @@ header .main-nav a:hover::after, header .main-nav #home .hero-btn a:last-child:h
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 100px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+#characters .img-item-container li {
+  margin-right: 5%;
 }
 
 #characters .img-select {
   height: auto;
-  width: 10%;
-  padding: 5px;
+  width: 40%;
   cursor: pointer;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);

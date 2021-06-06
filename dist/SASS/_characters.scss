@@ -12,12 +12,17 @@
         display: flex;
         justify-content: center;
         padding-top: 100px;
+        flex-direction: row;
+        list-style: none;
+
+        li{
+            margin-right:5%;
+        }
     }
 
     .img-select{
         height: auto;
-        width: 10%;
-        padding: 5px;
+        width: 40%;
         cursor: pointer;
         -webkit-filter: grayscale(100%);
                 filter: grayscale(100%);
